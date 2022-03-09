@@ -21,11 +21,5 @@ function initLocationARZappar()
         movie.setAttribute("visible", false);
         video.pause();
     });
-    
-    const zapparMarkerSize = () => {
-        const gm = zapparMarker.getAttribute('geometry');
-        console.log("width:" + gm.widht + ",height:" + gm.height);
-    } 
-    setTimeout(zapparMarkerSize, 1000);
 }
 window.onload = onLoadFunction;
