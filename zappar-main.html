@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <meta name="application-name" content="LocationAR Video Zappar Demo Application">
+  <meta name="application-name" content="Video Zappar Demo Application">
   <meta name="robots" content="noindex">
   <meta name="robots" content="nosnippet">
   <meta name="robots" content="nofollow">
@@ -12,16 +12,11 @@
   <meta name="googlebot" content="nosnippet">
   <meta name="googlebot-news" content="noindex">
   <meta name="googlebot-news" content="nosnippet">
-  <link rel="stylesheet" type="text/css" href="https://locationar-web.herokuapp.com/css/locationar-zappar.css">
-  <title>LocationAR Zappar Video Demo Application</title>
+  <title>Zappar Video Demo Application</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   <script src="https://libs.zappar.com/zappar-aframe/0.3.29/zappar-aframe.js"></script>
   <script src="https://libs.zappar.com/zappar-snapshot/1.0.1/zappar-snapshot.min.js"></script>
-  <script src="https://locationar-web.herokuapp.com/js/locationar-common.js"></script>
-  <script src="https://locationar-web.herokuapp.com/js/locationar-view-helper.js"></script>
-  <script src="https://locationar-web.herokuapp.com/js/locationar-service.js"></script>
-  <script src="https://locationar-web.herokuapp.com/js/locationar-zappar.js"></script>
   <script src="js/zappar-demo.js"></script>
 </head>
 <body>
@@ -38,14 +33,9 @@
       <!-- 800 x 450 -->
       <a-entity id="zappar-marker" zappar-image="target: marker2.zpt">
           <!-- <a-video id="movie" src="#video" width="3.6" height="2"></a-video>-->
-          <a-video id="movie" src="#video" width="3" height="3"></a-video>
+          <a-video id="movie" src="#video"></a-video>
       </a-entity>
     </a-scene>
-    <div class="locationar-zappar-btn-wrapper">
-      <a href="#" id="locationar-zappar-snapshot" class="locationar-zappar-btn-real-dent">
-        <i class="locationar-zappar-camera"></i>
-      </a>
-    </div>
   </div>
 </body>
 </html>

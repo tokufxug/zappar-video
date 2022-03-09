@@ -2,12 +2,11 @@
 
 function onLoadFunction()
 {
-    initLocationARZappar();
+    initZappar();
 }
 
-function initLocationARZappar()
+function initZappar()
 {
-    LocationARZappar.init();
     const zapparMarker = document.getElementById("zappar-marker");
     const video = document.querySelector("#video");
     const movie = document.getElementById("movie");
