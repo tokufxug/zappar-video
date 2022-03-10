@@ -17,7 +17,7 @@
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   <script src="https://libs.zappar.com/zappar-aframe/0.3.29/zappar-aframe.js"></script>
   <script src="https://libs.zappar.com/zappar-snapshot/1.0.1/zappar-snapshot.min.js"></script>
-  <script src="js/zappar-demo2.js?t=4"></script>
+  <script src="js/zappar-demo2.js?t=5"></script>
 </head>
 <body>
   <div id="ar-view">
@@ -34,10 +34,11 @@
       </a-entity>
     </a-scene>
     <div style="position: absolute;">
-      <input id="btn-scale-width-expansion" type="button" value="横幅拡大"/>&nbsp;
-      <input id="btn-scale-width-shrink" type="button" value="横幅縮小"/>&nbsp;
-      <input id="btn-scale-height-expansion" type="button" value="縦幅拡大"/>&nbsp;
-      <input id="btn-scale-height-shrink" type="button" value="縦幅縮小"/>&nbsp;
+      <input id="btn-scale-width-expansion" type="button" value="← →"/>&nbsp;
+      <input id="btn-scale-width-shrink" type="button" value="→ ←"/>&nbsp;
+      <input id="btn-scale-height-expansion" type="button" value="↑ ↓"/>&nbsp;
+      <input id="btn-scale-height-shrink" type="button" value="↓ ↑"/>&nbsp;
+      <div id="video-scale">w:1.0,h:1.0</div>
     </div>
   </div>
 
