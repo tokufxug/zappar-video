@@ -17,7 +17,7 @@
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   <script src="https://libs.zappar.com/zappar-aframe/0.3.29/zappar-aframe.js"></script>
   <script src="https://libs.zappar.com/zappar-snapshot/1.0.1/zappar-snapshot.min.js"></script>
-  <script src="js/zappar-demo.js"></script>
+  <script src="js/zappar-demo2.js"></script>
 </head>
 <body>
   <div id="ar-view">
@@ -32,7 +32,12 @@
       <a-entity id="zappar-marker" zappar-image="target: marker.zpt">
           <a-video id="movie" src="#video" scale="1 1 1"></a-video>
       </a-entity>
+      <a-entity>
+        <a-entity text=" align: center; width: 3 ; value: ←→"></a-entity>
+        <a-plane cursor width-scale-expansion color="#DE4C42" width="1.7" height=".3"></a-plane>
+      </a-entity>
     </a-scene>
   </div>
+
 </body>
 </html>
