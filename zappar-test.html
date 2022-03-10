@@ -13,12 +13,11 @@
   <meta name="googlebot-news" content="noindex">
   <meta name="googlebot-news" content="nosnippet">
   <title>Zappar Video Demo Application</title>
-  <link rel="stylesheet" href="css/zappar-video.css?t=2" />
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   <script src="https://libs.zappar.com/zappar-aframe/0.3.29/zappar-aframe.js"></script>
   <script src="https://libs.zappar.com/zappar-snapshot/1.0.1/zappar-snapshot.min.js"></script>
-  <script src="js/zappar-demo2.js?t=2"></script>
+  <script src="js/zappar-demo2.js?t=3"></script>
 </head>
 <body>
   <div id="ar-view">
@@ -34,8 +33,11 @@
           <a-video id="movie" src="#video" scale="1 1 1"></a-video>
       </a-entity>
     </a-scene>
-    <div class="zappar-preview-footer">
-      <input id="btn-scale-width-expansion" type="button" value="←→"/>
+    <div style="position: absolute;">
+      <input id="btn-scale-width-expansion" type="button" value="横幅拡大"/>&nbsp;
+      <input id="btn-scale-width-shrink" type="button" value="横幅縮小"/>&nbsp;
+      <input id="btn-scale-height-expansion" type="button" value="縦幅拡大"/>&nbsp;
+      <input id="btn-scale-height-shrink" type="button" value="縦幅縮小"/>&nbsp;
     </div>
   </div>
 
