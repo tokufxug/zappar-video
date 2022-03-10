@@ -21,13 +21,9 @@ function initZappar()
         video.pause();
     });
 
-    AFRAME.registerComponent("width-scale-expansion", {
-        init: function () {
-            this.el.addEventListener('mouseup', function (e) {
-                const s = movie.scale;
-                movie.scale.set(s.x + 0.1, s.y + 0.1, 1.0);
-            });
-        }
-    });
+    document.getElementById('btn-scale-width-expansion').addEventListener('mouseup', function (e) {
+        const s = movie.scale;
+        movie.scale.set(s.x + 0.1, s.y + 0.1, 1.0);
+    });   
 }
 window.onload = onLoadFunction;
