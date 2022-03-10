@@ -14,6 +14,21 @@ function initZappar()
 
     zapparMarker.addEventListener("zappar-visible", () => {
         movie.setAttribute("visible", true);
+        if (zapparMarker.object3D)
+        {
+            if (zapparMarker.object3D.scale)
+            {
+                console.log("SCALE:" + zapparMarker.object3D.scale);
+            }
+            else
+            {
+                console.log("SCALE Not Found");
+            }
+        }
+        else
+        {
+            console.log("Object3D Not Found");
+        }
         video.play();
     });
     zapparMarker.addEventListener("zappar-notvisible", () => {
