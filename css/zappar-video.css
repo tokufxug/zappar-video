@@ -1,5 +1,5 @@
 .zappar-preview-footer {
-    display:none;
-    position:absolute;
-    font-size: 18px;
-  }
+  width: 80%;
+  margin: 0 auto;
+  max-width: 80px;
+}
