@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="application-name" content="Video Zappar Demo Application">
+  <meta name="robots" content="noindex">
+  <meta name="robots" content="nosnippet">
+  <meta name="robots" content="nofollow">
+  <meta name="robots" content="noarchive">
+  <meta name="googlebot" content="noindex">
+  <meta name="googlebot" content="nosnippet">
+  <meta name="googlebot-news" content="noindex">
+  <meta name="googlebot-news" content="nosnippet">
+  <title>Zappar Video Demo Application</title>
+  <link rel="stylesheet" type="text/css" href="css/zappar-video.css">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  <script src="https://libs.zappar.com/zappar-aframe/0.3.29/zappar-aframe.js"></script>
+  <script src="https://libs.zappar.com/zappar-snapshot/1.0.1/zappar-snapshot.min.js"></script>
+  <script src="js/zappar-demo2.js?t=7"></script>
+</head>
+<body>
+  <div id="ar-view">
+    <a-scene device-orientation-permission-ui="false">
+      <a-assets>
+        <video id="video" preload="auto" autoplay="false" webkit-playsinline playsinline loop="true" crossorigin="anonymous" src="https://tokufxug.github.io/zappar-video/video.mp4" muted></video>
+      </a-assets>
+      <a-entity zappar-permissions-ui id="permissions">
+          <a-entity text="value: Please reload the page, accepting the camera permissions." position="0 0 -2"></a-entity>
+      </a-entity>
+      <a-camera zappar-camera cursor="rayOrigin: mouse; fuse: false;" raycaster="objects: .collidable"></a-camera>
+      <a-entity id="zappar-marker" zappar-image="target: marker2.zpt">
+          <a-video id="movie" src="#video" scale="1 1 1"></a-video>
+      </a-entity>
+    </a-scene>
+    <div style="position: absolute;">
+      <input id="btn-scale-width-expansion" type="button" value="← →"/>&nbsp;
+      <input id="btn-scale-width-shrink" type="button" value="→ ←"/>&nbsp;
+      <input id="btn-scale-height-expansion" type="button" value="↑ ↓"/>&nbsp;
+      <input id="btn-scale-height-shrink" type="button" value="↓ ↑"/>&nbsp;
+      <div id="video-scale">w:1.0,h:1.0</div>
+    </div>
+  </div>
+
+</body>
+</html>
