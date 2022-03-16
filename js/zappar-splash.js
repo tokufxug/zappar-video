@@ -2,7 +2,7 @@
 
 function onLoadFunction()
 {
-    document.getElementById("btnConfirm").addEventListener("click", () => {
+    /*document.getElementById("btnConfirm").addEventListener("click", () => {
         navigator.mediaDevices.getUserMedia({
             video: true,
             audio: false,
@@ -11,7 +11,7 @@ function onLoadFunction()
             document.getElementById("confirm").style.display = 'none';
         }).catch(e => {  
         });
-    });
+    });*/
     initZappar();
 }
 
