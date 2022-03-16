@@ -11,7 +11,7 @@ function onLoadFunction()
         }).catch(e => {  
         });
     });*/
-    ZapparSplashScreen.showUI(
+    /*ZapparSplashScreen.showUI(
       {
         onClick: (e) => {
           e.destroy();
@@ -32,7 +32,7 @@ function onLoadFunction()
         background,
         logo,
       },
-    );
+    );*/
     initZappar();
 }
 
