@@ -12,6 +12,28 @@ function onLoadFunction()
         }).catch(e => {  
         });
     });*/
+    ZapparSplashScreen.showUI(
+      {
+        onClick: (e) => {
+          e.destroy();
+          // Request the necessary permission from the user
+          ZapparThree.permissionRequestUI().then((granted) => {
+            if (granted) {
+              camera.start();
+              // Hide and show correct parts
+              zapparPlacementUi!.style.display = 'block';
+            } else {
+              ZapparThree.permissionDeniedUI();
+            }
+          });
+        },
+        title: 'Universal AR for Three.js',
+        subtitle: 'Image Tracking Cannon Physics',
+        buttonText: 'Tap here to start',
+        background,
+        logo,
+      },
+    );
     initZappar();
 }
 
