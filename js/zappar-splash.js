@@ -21,7 +21,7 @@ function onLoadFunction()
             if (granted) {
               camera.start();
               // Hide and show correct parts
-              zapparPlacementUi!.style.display = 'block';
+              //zapparPlacementUi!.style.display = 'block';
             } else {
               ZapparThree.permissionDeniedUI();
             }
