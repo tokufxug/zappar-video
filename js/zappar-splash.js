@@ -1,5 +1,4 @@
 'use strict';
-import * as ZapparSplashScreen from '@zappar/splash';
 function onLoadFunction()
 {
     /*document.getElementById("btnConfirm").addEventListener("click", () => {
