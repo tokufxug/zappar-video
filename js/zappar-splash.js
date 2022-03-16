@@ -7,8 +7,8 @@ function onLoadFunction()
             video: true,
             audio: false,
         }).then(s => {
-            document.getElementById("confirm").style.display = 'none';
             document.getElementById("ar-view").style.display = 'block';
+            document.getElementById("confirm").style.display = 'none';
         }).catch(e => {  
         });
     });
