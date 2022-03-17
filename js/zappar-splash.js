@@ -20,11 +20,13 @@ function onLoadFunction()
                 const camera = document.getElementById("camera");
                 // User granted the permissions so start the camera
                 camera.start();
+                document.getElementById("confirm").style.display = 'none';
+                document.getElementById("ar-view").style.display = 'block';
             }
             else
             {
                 //ZapparThree.permissionDeniedUI();
-                console.log('Denied')
+                console.log('Denied');
             }
         });
     });

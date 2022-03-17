@@ -18,12 +18,13 @@
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   <script src="https://libs.zappar.com/zappar-aframe/0.3.32/zappar-aframe.js"></script>
   <script src="https://libs.zappar.com/zappar-snapshot/1.0.1/zappar-snapshot.min.js"></script>
-  <script src="js/zappar-splash.js?a=7"></script>
+  <script src="js/zappar-splash.js?a=8"></script>
 </head>
 <body>
-  <input id="btnConfirm" type="button" value="confirm" />
-  
-  <div id="ar-view">
+  <div id="confirm">
+      <input id="btnConfirm" type="button" value="confirm" />
+  </div>
+  <div id="ar-view" style="display:none">
     <a-scene device-orientation-permission-ui="false">
       <a-assets>
         <video id="video" preload="auto" autoplay="false" webkit-playsinline playsinline loop="true" crossorigin="anonymous" src="https://tokufxug.github.io/zappar-video/video.mp4" muted></video>
