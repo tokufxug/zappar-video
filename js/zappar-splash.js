@@ -15,13 +15,13 @@ function onLoadFunction()
     
     document.getElementById("btnConfirm").addEventListener("click", () => {
         ZapparThree.permissionRequest().then(granted => {
-            if (granted)
-            {
-                const camera = document.getElementById("camera");
-                // User granted the permissions so start the camera
-                camera.start();
+            const system = document.querySelector("a-scene").systems["zappar-camera"] as any;
+            system.permissionGranted = granted;
+            if (granted) {
+                system.camera.start(system.userFacing);
                 document.getElementById("confirm").style.display = 'none';
                 document.getElementById("ar-view").style.display = 'block';
+                return;
             }
             else
             {
