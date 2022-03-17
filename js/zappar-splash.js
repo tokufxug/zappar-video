@@ -15,7 +15,8 @@ function onLoadFunction()
     
     document.getElementById("btnConfirm").addEventListener("click", () => {
         ZapparThree.permissionRequest().then(granted => {
-            const system = document.querySelector("a-scene").systems["zappar-camera"] as any;
+            //const system = document.querySelector("a-scene").systems["zappar-camera"] as any;
+            const system = document.querySelector("a-scene").systems["zappar-camera"];
             system.permissionGranted = granted;
             if (granted) {
                 system.camera.start(system.userFacing);
