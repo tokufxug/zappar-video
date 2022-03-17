@@ -11,28 +11,23 @@ function onLoadFunction()
         }).catch(e => {  
         });
     });*/
-    /*ZapparSplashScreen.showUI(
-      {
-        onClick: (e) => {
-          e.destroy();
-          // Request the necessary permission from the user
-          ZapparThree.permissionRequestUI().then((granted) => {
-            if (granted) {
-              camera.start();
-              // Hide and show correct parts
-              //zapparPlacementUi!.style.display = 'block';
-            } else {
-              ZapparThree.permissionDeniedUI();
+    
+    
+    document.getElementById("btnConfirm").addEventListener("click", () => {
+        ZapparThree.permissionRequest().then(granted => {
+            if (granted)
+            {
+                const camera = document.getElementById("camera");
+                // User granted the permissions so start the camera
+                camera.start();
             }
-          });
-        },
-        title: 'Universal AR for Three.js',
-        subtitle: 'Image Tracking Cannon Physics',
-        buttonText: 'Tap here to start',
-        background,
-        logo,
-      },
-    );*/
+            else
+            {
+                //ZapparThree.permissionDeniedUI();
+                console.log('Denied')
+            }
+        });
+    });
     initZappar();
 }
 
